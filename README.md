@@ -35,7 +35,7 @@ package:
 	@echo "Version: 1.0 " >> ./.temp/DEBIAN/control
 	@echo "Depends: " >> ./.temp/DEBIAN/control
 	@echo "Description: mydescription"  >> ./.temp/DEBIAN/control
-	@sudo chown -R root.root ./.temp
+	@chmod +x .temp/usr/bin/myscript
 	@dpkg -b .temp mypackage.deb
 	@sudo rm -r .temp
 ```

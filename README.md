@@ -71,3 +71,7 @@ sudo make remove
 script use:
         ``testscript``
 
+##### Installing package deb
+```bash
+sudo dpkg -i package.deb
+```
